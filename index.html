@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vapeadores vs Cigarros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #444;
+            color: white;
+        }
+        .faq, .expand {
+            margin-top: 20px;
+        }
+        .faq button, .expand button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #444;
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .faq button:hover, .expand button:hover {
+            background: #666;
+        }
+        .faq-content, .expand-content {
+            display: none;
+            padding: 10px;
+            background: #ddd;
+            border-left: 4px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vapeadores vs Cigarros</h1>
+    </header>
+    <div class="container">
+        <h2>¿Qué es un cigarro?</h2>
+        <p>Un cigarro es un producto elaborado con tabaco seco y picado, envuelto en papel delgado, diseñado para ser encendido y fumado. Contiene nicotina, una sustancia adictiva, además de alquitrán y otras sustancias químicas que pueden ser perjudiciales para la salud. Su consumo habitual está asociado con diversas enfermedades, como cáncer de pulmón, enfermedades cardiovasculares y problemas respiratorios.</p>
+        
+        <h2>¿Qué es un vapeador?</h2>
+        <p> Un vapeador es un dispositivo electrónico utilizado para inhalar vapor que se genera al calentar un líquido, conocido como "e-líquido" o "vape juice", que generalmente contiene nicotina, propilenglicol, glicerina vegetal y aromatizantes. Los vapeadores están diseñados como una alternativa al cigarro tradicional y se promocionan como una opción menos dañina, aunque su uso también está relacionado con riesgos para la salud, como afecciones respiratorias y cardiovasculares. La nicotina, que está presente en muchos de estos líquidos, sigue siendo una sustancia adictiva.</p>
+        
+        <h2>Comparación General</h2>
+        <table>
+            <tr>
+                <th>Característica</th>
+                <th>Cigarro Tradicional 🚬</th>
+                <th>Vapeador 🔥</th>
+            </tr>
+            <tr>
+                <td>Contiene Nicotina</td>
+                <td>✅ Sí</td>
+                <td>✅ Sí (en la mayoría)</td>
+            </tr>
+            <tr>
+                <td>Contiene Alquitrán</td>
+                <td>✅ Sí</td>
+                <td>❌ No</td>
+            </tr>
+            <tr>
+                <td>Daño Pulmonar</td>
+                <td>✅ Alto</td>
+                <td>⚠ En estudio</td>
+            </tr>
+            <tr>
+                <td>Adicción</td>
+                <td>✅ Muy alta</td>
+                <td>✅ Alta (si tiene nicotina)</td>
+            </tr>
+        </table>
+        
+        <div class="expand">
+            <button onclick="toggleExpand('expand1')">Ver más información sobre riesgos</button>
+            <div id="expand1" class="expand-content">
+                <h2>Riesgos para la salud</h2>
+                <p><strong>Cigarro tradicional:</strong> Puede causar cáncer, enfermedades respiratorias, cardiovasculares y daño en órganos internos. Según la Organización Mundial de la Salud (OMS), el tabaquismo es responsable de más de 8 millones de muertes al año en el mundo.</p>
+                <p><strong>Vapeadores:</strong> Aunque tienen menos sustancias tóxicas, pueden causar daños pulmonares, adicción a la nicotina y afectaciones al sistema nervioso. Estudios de la Universidad Johns Hopkins han encontrado trazas de metales pesados en los aerosoles de los vapeadores.</p>
+            </div>
+        </div>
+        
+        <h2>Impacto en los jóvenes</h2>
+        <p>El consumo de vapeadores en adolescentes ha aumentado debido a su fácil acceso y la variedad de sabores. Sin embargo, estudios muestran que el vapeo puede afectar el desarrollo cerebral y aumentar la probabilidad de adicción en el futuro.</p>
+        
+        <h2>Impacto económico y social</h2>
+        <p>El tabaquismo genera costos médicos y pérdidas económicas significativas. Según la OMS, el gasto en salud pública por enfermedades relacionadas con el tabaco asciende a cientos de miles de millones de dólares anuales. En el caso del vapeo, aunque se percibe como una opción más barata, su impacto en la salud aún se está evaluando.</p>
+        
+        <div class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <button onclick="toggleFaq('faq1')">¿El vapeo es más seguro que el cigarro?</button>
+            <div id="faq1" class="faq-content">El vapeo es considerado menos perjudicial que fumar cigarrillos tradicionales porque produce menos sustancias tóxicas. Sin embargo, no es completamente seguro, ya que los líquidos de vapeo pueden contener sustancias dañinas y nicotina, que es adictiva. Por lo tanto, el vapeo sigue representando riesgos para la salud.</div>
+            
+            <button onclick="toggleFaq('faq2')">¿El vapeo ayuda a dejar de fumar?</button>
+            <div id="faq2" class="faq-content">El vapeo a veces se utiliza como una herramienta para dejar de fumar, ya que puede ayudar a reducir el consumo de cigarrillos al proporcionar una fuente de nicotina sin los productos tóxicos del humo del tabaco. Sin embargo, no está científicamente comprobado que sea una forma eficaz y segura de dejar de fumar a largo plazo. Además, algunas personas pueden terminar dependiendo del vapeo en lugar de dejar la nicotina por completo. Lo más recomendado es buscar métodos aprobados como terapias de reemplazo de nicotina o asesoramiento profesional para dejar de fumar de manera segura.</div>
+            
+            <button onclick="toggleFaq('faq3')">¿Los vapeadores afectan a los adolescentes?</button>
+            <div id="faq3" class="faq-content">Sí, los vapeadores pueden afectar a los adolescentes. El uso de cigarrillos electrónicos en esta edad puede tener varios riesgos:
+
+                Adicción a la nicotina: Muchos líquidos de vapeo contienen nicotina, que es altamente adictiva y puede afectar el desarrollo cerebral en los adolescentes, especialmente en áreas relacionadas con la memoria, el aprendizaje y el control de impulsos.
+                
+                Problemas respiratorios: Aunque el vapeo produce menos toxinas que los cigarrillos tradicionales, el vapor puede irritar los pulmones y aumentar el riesgo de afecciones respiratorias.
+                
+                Impacto en el cerebro: El uso de nicotina en la adolescencia puede alterar el desarrollo del cerebro, lo que puede llevar a una mayor vulnerabilidad a trastornos de ansiedad, depresión y dificultades para controlar impulsos.
+                
+                Riesgo de continuar con el tabaco: Algunos adolescentes que comienzan a vapear pueden terminar fumando cigarrillos tradicionales, lo que aumenta los riesgos de enfermedades graves.</div>
+            
+            <button onclick="toggleFaq('faq4')">¿Qué sustancias contiene el vapeo?</button>
+            <div id="faq4" class="faq-content">Los líquidos de los vapeadores pueden contener nicotina, propilenglicol, glicerina vegetal, saborizantes y metales pesados como plomo y níquel.</div>
+        </div>
+    </div>
+    <script>
+        function toggleFaq(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === "block") ? "none" : "block";
+        }
+        function toggleExpand(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
